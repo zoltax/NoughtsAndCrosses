@@ -47,6 +47,7 @@ class NoughtsCrosses
 
         while ( $line = fgets($stream) ) {
             $line = trim($line);
+            $line = str_replace(['X','O'], ['x', 'o'], $line);
             if ( strlen($line) == 3) {
                 $game[] = $line;
 

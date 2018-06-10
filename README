@@ -1,0 +1,22 @@
+Noughts & Crosses
+
+Written in PHP 7.1
+Db used in a MariaDB provided by docker.
+
+Running:
+
+php noughtscrosses.php will display help text
+
+Usage: noughtscrosses.php [ACTION]
+    Actions:
+        Results - Output all-time results from all games ever.
+        Calculate - Calculate results from round of games provided via STDIN
+
+
+Database has only one table, and it's sql is in the nac.sql file
+
+There is a option of loading input data from file, not from STDIN:
+
+php noughtscrosses.php calculate < data.txt
+
+That's all!
