@@ -1,0 +1,14 @@
+version: '2'
+services:
+    mariadb:
+        image: mariadb:10.2
+        container_name: docker-mariadb
+        volumes:
+          - ./docker/data/mariadb:/var/lib/mysql
+        ports:
+            - '33306:3306'
+        environment:
+          - MYSQL_ROOT_PASSWORD=nac
+          - MYSQL_DATABASE=nac
+          - MYSQL_USER=nac
+          - MYSQL_PASSWORD=nac
